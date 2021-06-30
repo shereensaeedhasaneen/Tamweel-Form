@@ -9,7 +9,7 @@
 section {
   padding: 32px 0;
   font-family: arial, sans-serif;
-  &:first-of-type{
+  &:first-of-type {
     // margin-bottom: 380px;
   }
   &:nth-of-type(2) {
@@ -25,7 +25,7 @@ section {
 }
 .inner-container {
   border: 1px solid #1fbcc3;
-  padding: 25px 40px 127px; 
+  padding: 25px 40px 127px;
   min-height: 1430px;
 }
 // .inner-container h4 {
@@ -84,7 +84,7 @@ section {
         .logo-bank {
           display: flex;
           justify-content: flex-end;
-           img {
+          img {
             max-width: 215px;
             max-height: 82px;
             // max-width: 110px;
@@ -146,10 +146,22 @@ section {
       th {
         border: 1px solid #000;
         text-align: center;
-        padding: 8px;
+        padding: 0px;
         font-weight: 600;
         font-size: 18px;
         color: #b68922;
+        textarea {
+          resize: none;
+          border: none;
+        }
+        textarea:focus-visible {
+        box-shadow: 0px 2px 7px 0px #b68922cc;
+        outline: none;
+        }
+        input{
+          width: 100%;
+          border: none;
+        }
       }
       th {
         color: #1fbcc3;
@@ -159,63 +171,61 @@ section {
   }
 }
 
-
 section {
-
   &:first-of-type {
-    .container{
+    .container {
       min-height: auto;
-      .inner-container{
+      .inner-container {
         padding: 25px 40px 86px;
         min-height: auto;
       }
     }
   }
-  
+
   &:nth-of-type(2) {
     margin-bottom: 0px;
     height: auto;
-    .container, .inner-container{
+    .container,
+    .inner-container {
       min-height: auto;
     }
-    .inner-container{
+    .inner-container {
       padding-bottom: 13px;
     }
   }
-  &:last-of-type{
-    .container, .inner-container{
+  &:last-of-type {
+    .container,
+    .inner-container {
       min-height: auto;
     }
-    .inner-container{
+    .inner-container {
       padding-bottom: 23px;
     }
   }
 }
 
-
 @media print {
   section:first-of-type {
     margin-bottom: 380px;
-}
+  }
   section:nth-of-type(3) {
     margin-top: 160px;
     background-color: red;
-}
+  }
 }
 // section:nth-of-type(3) {
 //   margin-top: 1600px;
 //   background-color: red;
 // }
 
-
 ///////////////// updates //////////////////////
-.input-field{
+.input-field {
   width: 80%;
 }
 
-input[type=text]{
+input[type="text"] {
   outline-color: #1fbcc3;
 }
-.special-input{
+.special-input {
   width: 70% !important;
 }

@@ -167,6 +167,14 @@ section {
         color: #1fbcc3;
         padding: 0px;
       }
+      .border-info{
+        border: 1px solid;
+        padding: 11px;
+        p.title{
+          font-weight: 900;
+          font-size: 22px;
+        }
+      }
     }
   }
 }

@@ -144,6 +144,14 @@ section:nth-of-type(2) {
   color: #1fbcc3;
   padding: 0px;
 }
+.container .inner-container .inner-content .border-info {
+  border: 1px solid;
+  padding: 11px;
+}
+.container .inner-container .inner-content .border-info p.title {
+  font-weight: 900;
+  font-size: 22px;
+}
 
 section:first-of-type .container {
   min-height: auto;
@@ -193,7 +201,4 @@ input[type=text] {
   width: 70% !important;
 }
 
-label{
-  margin-right: 5px;
-}
 /*# sourceMappingURL=app.css.map */

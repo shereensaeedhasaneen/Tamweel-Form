@@ -40,15 +40,15 @@
                         <p class="col-sm-6"> محافظه  <input type="text" class="input-field"></p>
                     </div>
                     <br>
-                    <p>فرع  <input type="text"></p>
+                    <p>فرع  <input type="text" style="width: 83%; margin-right: 85px;"></p>
                     <p>تحية طيبة وبعد،،،</p>
                     <p>الرجاء التكرم بالموافقة على التسهيالت المطلوبة والمبينة أدناه ووارد فيما يلي البيانات الخاصة بي والتي أقر بصحتها ومسئوليتي الكاملة عما ورد بها</p>
                     <ul>
                         <!--<li>الإسم: <input type="text"> <span>&#xA0;&#xA0; &#xA0; &#xA0;</span> النوع: ذكر/ انثى <span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</span> بيانات بطاقة الرقم القومي: <input type="text"> </li>-->
                         <li class="row"> 
                             <p class="col-sm-4">الاسم  <input type="text" class="input-field"></p>
-                            <p class="col-sm-2">النوع: ذكر/ انثى</p>
-                            <p class="col-sm-6">بيانات بطاقة الرقم القومي  <input type="text"  style="width: 58%;"></p>
+                            <p class="col-sm-3">النوع: <input type="radio" id="male" name="gender"><label for="male">ذكر</label> <input type="radio" id="female" name="gender"><label for="female">انثي</label> </p>
+                            <p class="col-sm-5">بيانات بطاقة الرقم القومي  <input type="text"  style="width: 52%;"></p>
                         </li>
                         <li>بيان الحيازات الزراعية الحائز بها لي وبالضامنين:</li>
                     </ul>
@@ -109,7 +109,7 @@
                         
                     <ul>
                         <li>نوع األرض: قديمة (<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</span>) جديدة (مستصلحة) (<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</span>) </li>
-                        <li>ملكية األرض: إيجار (تمليك)(<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</span>)  المساحة / <span>&#xA0; &#xA0;</span><input type="text" ></li>
+                        <li>ملكية األرض: إيجار (تمليك)(<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</span>)  المساحة  <span>&#xA0; &#xA0;</span><input type="text" ></li>
                         <li>إذا كان المكان إيجار: قيمة اإليجار السنوي:<span>&#xA0; &#xA0;</span> <input type="text" > </li>
                         <li>مدى توافر المرافق والخدمات األساسية:<span>&#xA0; &#xA0;  &#xA0; &#xA0;</span> <input type="text" > </li>
                         <li>مدى توافر تسويق للمحاصيل الزراعية:<span>&#xA0; &#xA0; &#xA0; &#xA0;</span> <input type="text" style="margin-right: 2px;"></li>
@@ -284,8 +284,11 @@
                 </div>
                 <h5 class="text-decoration-underline mb-h5">اقرار بتحمل فرق الدعم  </h5>
                 <div class="inner-content">
-                   <p>أقر أنا/<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; </span> رقم قومي:<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; </span></p>
-                    <p>الحاصل على قروض زراعية من البنك الزراعي المصري فرع<span>&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; </span> بانني مستعد لسداد فرق الدعم المحتسب من القروض الزراعية
+                    <div class="row">
+                        <p class="col-sm-6"> أقر أنا <input type="text"></p>
+                        <p class="col-sm-6">  رقم قومي <input type="text"></p>
+                    </div>
+                    <p>الحاصل على قروض زراعية من البنك الزراعي المصري فرع<input type="text" style="border: none; outline: none; border-bottom: 1px solid black;"> بانني مستعد لسداد فرق الدعم المحتسب من القروض الزراعية
                         في حالة تعذر البنك في تحصيله من وزارة المالية أو إلغاء الدعم. 
                     </p>
                     <p class="text-center py-5">وهذا إقرار مني بذلك</p>

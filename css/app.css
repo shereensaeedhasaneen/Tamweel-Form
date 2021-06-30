@@ -179,4 +179,12 @@ input[type=text] {
 label{
   margin-right: 5px;
 }
+
+.dashed-input{
+  border: none; 
+  outline: none;
+  border-bottom: 1px dashed black;
+  margin-right: 10px;
+ 
+}
 /*# sourceMappingURL=app.css.map */

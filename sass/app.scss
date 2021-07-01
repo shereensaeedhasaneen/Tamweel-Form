@@ -5,7 +5,18 @@
 .text-left {
   text-align: left;
 }
-
+body,
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  font-family: "Tajawal";
+}
 section {
   padding: 32px 0;
   font-family: arial, sans-serif;
@@ -21,11 +32,11 @@ section {
   min-height: 1430px;
   border: 3px solid #b68922;
   padding: 2px;
-  max-width: 980px;
+  max-width: 1185px;
 }
 .inner-container {
   border: 1px solid #1fbcc3;
-  padding: 25px 40px 127px;
+  padding: 25px 15px 127px;
   min-height: 1430px;
 }
 // .inner-container h4 {
@@ -44,6 +55,9 @@ section {
 .container {
   .inner-container {
     .header {
+      img {
+        max-height: 66px !important;
+      }
       &:first-of-type {
         justify-content: space-between;
         border-bottom: 3px solid #1fbcc3;
@@ -78,6 +92,7 @@ section {
             }
           }
           h4:nth-of-type(2) {
+            margin-bottom: 0;
             font-weight: 600;
           }
         }
@@ -120,6 +135,16 @@ section {
         }
         &.client1 {
           padding-left: 204px;
+          position: relative;
+          &::after {
+            content: "";
+            width: 127px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 7px;
+            left: 67px;
+          }
         }
       }
       ul,
@@ -144,33 +169,42 @@ section {
 
       td,
       th {
-        border: 1px solid #000;
+        // border: 1px solid #000;
         text-align: center;
         padding: 0px;
         font-weight: 600;
         font-size: 18px;
-        color: #b68922;
+        background: transparent;
+        // color: #333;
         textarea {
           resize: none;
           border: none;
         }
         textarea:focus-visible {
-        box-shadow: 0px 2px 7px 0px #b68922cc;
-        outline: none;
+          box-shadow: 0px 2px 7px 0px #b68922cc;
+          outline: none;
         }
-        input{
+        input {
           width: 100%;
           border: none;
+          background: #585858;
+          color: white;
+          text-align: center;
         }
+        input:focus-visible {
+          outline: none;
+        }
+
       }
       th {
-        color: #1fbcc3;
+        // color: #1fbcc3;
         padding: 0px;
       }
-      .border-info{
+      .border-info {
         border: 1px solid;
         padding: 11px;
-        p.title{
+        margin: 0px;
+        p.title {
           font-weight: 900;
           font-size: 22px;
         }
@@ -184,7 +218,7 @@ section {
     .container {
       min-height: auto;
       .inner-container {
-        padding: 25px 40px 86px;
+        padding: 25px 15px 44px;
         min-height: auto;
       }
     }
@@ -233,7 +267,28 @@ section {
 
 input[type="text"] {
   outline-color: #1fbcc3;
+  margin-right: 4px;
 }
 .special-input {
   width: 70% !important;
 }
+
+
+table th,
+table td {
+  padding: .5em;
+  border: 3px solid #FFF;
+  border-bottom-width: 11px;
+}
+table th{
+  border-bottom-width: 3px;
+
+}
+table {
+  color: #FFF;
+  background: rgb(88, 88, 88);
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+
+

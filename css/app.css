@@ -7,6 +7,19 @@
   text-align: left;
 }
 
+body,
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  font-family: "Tajawal";
+}
+
 section {
   padding: 32px 0;
   font-family: arial, sans-serif;
@@ -20,12 +33,12 @@ section:nth-of-type(2) {
   min-height: 1430px;
   border: 3px solid #b68922;
   padding: 2px;
-  max-width: 980px;
+  max-width: 1185px;
 }
 
 .inner-container {
   border: 1px solid #1fbcc3;
-  padding: 25px 40px 127px;
+  padding: 25px 15px 127px;
   min-height: 1430px;
 }
 
@@ -41,6 +54,9 @@ section:nth-of-type(2) {
   margin-bottom: 80px;
 }
 
+.container .inner-container .header img {
+  max-height: 66px !important;
+}
 .container .inner-container .header:first-of-type {
   justify-content: space-between;
   border-bottom: 3px solid #1fbcc3;
@@ -71,6 +87,7 @@ section:nth-of-type(2) {
   padding-right: 16px;
 }
 .container .inner-container .header:first-of-type .name-bank h4:nth-of-type(2) {
+  margin-bottom: 0;
   font-weight: 600;
 }
 .container .inner-container .header:first-of-type .logo-bank {
@@ -99,6 +116,16 @@ section:nth-of-type(2) {
 }
 .container .inner-container .inner-content p.client1 {
   padding-left: 204px;
+  position: relative;
+}
+.container .inner-container .inner-content p.client1::after {
+  content: "";
+  width: 127px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 7px;
+  left: 67px;
 }
 .container .inner-container .inner-content ul,
 .container .inner-container .inner-content ol {
@@ -118,12 +145,11 @@ section:nth-of-type(2) {
 }
 .container .inner-container .inner-content td,
 .container .inner-container .inner-content th {
-  border: 1px solid #000;
   text-align: center;
   padding: 0px;
   font-weight: 600;
   font-size: 18px;
-  color: #b68922;
+  background: transparent;
 }
 .container .inner-container .inner-content td textarea,
 .container .inner-container .inner-content th textarea {
@@ -139,14 +165,21 @@ section:nth-of-type(2) {
 .container .inner-container .inner-content th input {
   width: 100%;
   border: none;
+  background: #585858;
+  color: white;
+  text-align: center;
+}
+.container .inner-container .inner-content td input:focus-visible,
+.container .inner-container .inner-content th input:focus-visible {
+  outline: none;
 }
 .container .inner-container .inner-content th {
-  color: #1fbcc3;
   padding: 0px;
 }
 .container .inner-container .inner-content .border-info {
   border: 1px solid;
   padding: 11px;
+  margin: 0px;
 }
 .container .inner-container .inner-content .border-info p.title {
   font-weight: 900;
@@ -157,7 +190,7 @@ section:first-of-type .container {
   min-height: auto;
 }
 section:first-of-type .container .inner-container {
-  padding: 25px 40px 86px;
+  padding: 25px 15px 44px;
   min-height: auto;
 }
 section:nth-of-type(2) {
@@ -195,21 +228,29 @@ section:last-of-type .inner-container {
 
 input[type=text] {
   outline-color: #1fbcc3;
+  margin-right: 4px;
 }
 
 .special-input {
   width: 70% !important;
 }
 
-label{
-  margin-right: 5px;
+table th,
+table td {
+  padding: 0.5em;
+  border: 3px solid #FFF;
+  border-bottom-width: 11px;
 }
 
-.dashed-input{
-  border: none; 
-  outline: none;
-  border-bottom: 1px dashed black;
-  margin-right: 10px;
- 
+table th {
+  border-bottom-width: 3px;
 }
+
+table {
+  color: #FFF;
+  background: #585858;
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+
 /*# sourceMappingURL=app.css.map */
